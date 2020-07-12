@@ -9,10 +9,10 @@ class Kpis extends React.Component {
             <div>
                 <h3>{kpiItem.measure}</h3>
 
-                {kpiItem.ccgs.map(c =>                     
+                <div className="row">
+                    {kpiItem.ccgs.map(c =>                     
                     <CcgItem odsCode={c}/>)}
-
-                <hr></hr>
+                </div>
             </div>
 
             )
